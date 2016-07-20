@@ -49,21 +49,21 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<artifactId>gs-core</artifactId>
 		<version>1.3</version>
         <scope>system</scope>
-		 <systemPath>${project.basedir}/../gs-core-1.3/gs-core-1.3.jar</systemPath>
+		 <systemPath>${project.basedir}/gs-core-1.3/gs-core-1.3.jar</systemPath>
   	</dependency>
       <dependency>
           <groupId>org.graphstream</groupId>
           <artifactId>gs-ui</artifactId>
           <version>1.3</version>
           <scope>system</scope>
-          <systemPath>${project.basedir}/../gs-ui-1.3/gs-ui-1.3.jar</systemPath>
+          <systemPath>${project.basedir}/gs-ui-1.3/gs-ui-1.3.jar</systemPath>
       </dependency>
       <dependency>
           <groupId>org.graphstream</groupId>
           <artifactId>gs-algo</artifactId>
           <version>1.3</version>
           <scope>system</scope>
-          <systemPath>${project.basedir}/../gs-algo-1.3/gs-algo-1.3.jar</systemPath>
+          <systemPath>${project.basedir}/gs-algo-1.3/gs-algo-1.3.jar</systemPath>
       </dependency>
       <dependency>
           <groupId>com.google.guava</groupId>
