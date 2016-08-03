@@ -89,7 +89,7 @@ public class GRBSteinerTree {
             String edge = source > target ? "" + target + "," + source : "" + source + "," + target;
 
             if (!edgeIndex.containsKey(edge)) {
-                System.out.println("Edge: " + edge + ": idx: " + idx);
+               // System.out.println("Edge: " + edge + ": idx: " + idx);
                 indexEdge.put(idx,edge);
                 edgeIndex.put(edge, idx++);
             }
@@ -102,7 +102,7 @@ public class GRBSteinerTree {
 
         graphReader.close();
 
-        System.out.println("init done");
+      //  System.out.println("init done");
         x_t_1 = new double[num_edges];
         Arrays.fill(x_t_1,0.0);
 
@@ -169,15 +169,15 @@ public class GRBSteinerTree {
         model.setObjective(expr, GRB.MINIMIZE);
 
         addConstrains(model, x);
-        System.out.println("starting");
+      //  System.out.println("starting");
         model.optimize();
         double cost = model.get(GRB.DoubleAttr.ObjVal);
-        System.out.println("\nTOTAL COSTS: " + cost);
-        System.out.println("SOLUTION:");
+//        System.out.println("\nTOTAL COSTS: " + cost);
+//        System.out.println("SOLUTION:");
 
         for(int p = 0; p < num_edges; ++p) {
             if (x[p].get(GRB.DoubleAttr.X) == 1.0) {
-                System.out.println("x" + p + ": " + indexEdge.get(p));
+                //System.out.println("x" + p + ": " + indexEdge.get(p));
                 x_t_1[p] = 1;
                 steinerTreeEdges.add(indexEdge.get(p));
             }
