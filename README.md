@@ -1,5 +1,5 @@
 # DIA-Protection
-Algorithms to find the optimal protection scheme to protect state estimate from data injection attacks.
+Algorithms to find the optimal protection scheme to protect state estimate from data injection attacks. Algorithm implementations can be found at src/main/java/edu/usc/cps/alg
 
 Prerequisites
 ==============
